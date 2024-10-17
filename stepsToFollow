@@ -1,0 +1,4 @@
+step 1. pip install grpcio grpcio-tools protobuf psutil
+
+step 2. register: the files
+    python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. object_detection.proto

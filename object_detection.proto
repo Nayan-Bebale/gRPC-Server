@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+service ObjectDetectionService {
+    rpc DetectObjects (DetectionRequest) returns (DetectionResponse) {}
+}
+
+message DetectionRequest {
+    string image_path = 1;
+    string model_type = 2;  // Add this line
+}
+
+message DetectionResponse {
+    repeated DetectedObject objects = 1;
+    float accuracy = 2; // Add accuracy
+    string energy_efficiency = 3; // Add energy efficiency (use string if you're reading it as a string from a command)
+}
+
+message DetectedObject {
+    string label = 1;
+    float confidence = 2;
+    int32 x = 3;
+    int32 y = 4;
+    int32 width = 5;
+    int32 height = 6;
+}
