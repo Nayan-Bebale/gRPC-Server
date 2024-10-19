@@ -24,7 +24,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x16object_detection.proto\":\n\x10\x44\x65tectionRequest\x12\x12\n\nimage_path\x18\x01 \x01(\t\x12\x12\n\nmodel_type\x18\x02 \x01(\t\"b\n\x11\x44\x65tectionResponse\x12 \n\x07objects\x18\x01 \x03(\x0b\x32\x0f.DetectedObject\x12\x10\n\x08\x61\x63\x63uracy\x18\x02 \x01(\x02\x12\x19\n\x11\x65nergy_efficiency\x18\x03 \x01(\t\"h\n\x0e\x44\x65tectedObject\x12\r\n\x05label\x18\x01 \x01(\t\x12\x12\n\nconfidence\x18\x02 \x01(\x02\x12\t\n\x01x\x18\x03 \x01(\x05\x12\t\n\x01y\x18\x04 \x01(\x05\x12\r\n\x05width\x18\x05 \x01(\x05\x12\x0e\n\x06height\x18\x06 \x01(\x05\x32R\n\x16ObjectDetectionService\x12\x38\n\rDetectObjects\x12\x11.DetectionRequest\x1a\x12.DetectionResponse\"\x00\x62\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x16object_detection.proto\":\n\x10\x44\x65tectionRequest\x12\x12\n\nimage_path\x18\x01 \x01(\t\x12\x12\n\nmodel_type\x18\x02 \x01(\t\"\x8b\x01\n\x11\x44\x65tectionResponse\x12 \n\x07objects\x18\x01 \x03(\x0b\x32\x0f.DetectedObject\x12\x10\n\x08\x61\x63\x63uracy\x18\x02 \x01(\x02\x12\x19\n\x11\x65nergy_efficiency\x18\x03 \x01(\t\x12\x11\n\tcpu_usage\x18\x04 \x01(\x02\x12\x14\n\x0cmemory_usage\x18\x05 \x01(\x02\"h\n\x0e\x44\x65tectedObject\x12\r\n\x05label\x18\x01 \x01(\t\x12\x12\n\nconfidence\x18\x02 \x01(\x02\x12\t\n\x01x\x18\x03 \x01(\x05\x12\t\n\x01y\x18\x04 \x01(\x05\x12\r\n\x05width\x18\x05 \x01(\x05\x12\x0e\n\x06height\x18\x06 \x01(\x05\x32R\n\x16ObjectDetectionService\x12\x38\n\rDetectObjects\x12\x11.DetectionRequest\x1a\x12.DetectionResponse\"\x00\x62\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -33,10 +33,10 @@ if not _descriptor._USE_C_DESCRIPTORS:
   DESCRIPTOR._loaded_options = None
   _globals['_DETECTIONREQUEST']._serialized_start=26
   _globals['_DETECTIONREQUEST']._serialized_end=84
-  _globals['_DETECTIONRESPONSE']._serialized_start=86
-  _globals['_DETECTIONRESPONSE']._serialized_end=184
-  _globals['_DETECTEDOBJECT']._serialized_start=186
-  _globals['_DETECTEDOBJECT']._serialized_end=290
-  _globals['_OBJECTDETECTIONSERVICE']._serialized_start=292
-  _globals['_OBJECTDETECTIONSERVICE']._serialized_end=374
+  _globals['_DETECTIONRESPONSE']._serialized_start=87
+  _globals['_DETECTIONRESPONSE']._serialized_end=226
+  _globals['_DETECTEDOBJECT']._serialized_start=228
+  _globals['_DETECTEDOBJECT']._serialized_end=332
+  _globals['_OBJECTDETECTIONSERVICE']._serialized_start=334
+  _globals['_OBJECTDETECTIONSERVICE']._serialized_end=416
 # @@protoc_insertion_point(module_scope)

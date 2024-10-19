@@ -1,5 +1,5 @@
 import cv2
-import numpy as np
+import numpy 
 import time
 import os 
 import torch

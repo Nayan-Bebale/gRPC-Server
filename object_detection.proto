@@ -6,13 +6,15 @@ service ObjectDetectionService {
 
 message DetectionRequest {
     string image_path = 1;
-    string model_type = 2;  // Add this line
+    string model_type = 2;  // Add this line for model type
 }
 
 message DetectionResponse {
     repeated DetectedObject objects = 1;
-    float accuracy = 2; // Add accuracy
-    string energy_efficiency = 3; // Add energy efficiency (use string if you're reading it as a string from a command)
+    float accuracy = 2;  // Add accuracy field
+    string energy_efficiency = 3;  // Add energy efficiency field
+    float cpu_usage = 4;  // Add CPU usage field
+    float memory_usage = 5;  // Add memory usage field
 }
 
 message DetectedObject {

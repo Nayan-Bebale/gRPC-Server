@@ -1,0 +1,13 @@
+google-pasta
+grpcio
+psutil
+opencv-python
+numpy
+torch
+torchvision
+tensorflow
+tensorflow-hub
+ultralytics
+matplotlib
+requests
+Pillow
