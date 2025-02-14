@@ -1,0 +1,2 @@
+public_ip,local_ip,latitude,longitude,service_provider,city,region,country,subnet_mask,subnet,asn,asn_description,timestamp
+103.159.214.189,10.206.3.146,22.602,75.6965,AS141270 Indian Institute Of Technology Indore,Pithampur,Madhya Pradesh,IN,255.255.240.0,10.206.0.0/20,AS141270,"IITI-AS-IN Indian Institute Of Technology Indore, IN",2024-10-23 14:02:01

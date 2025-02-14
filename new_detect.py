@@ -415,13 +415,13 @@ def run_model(image_path, model_name="fasterrcnn"):
     return detected_objects, latency, accuracy, throughput, energy_required, power_watts
 
 
-# if __name__ == "__main__":
-#     image_path = "ppc-0603.jpeg"  # Replace with your image path or URL
-#     model_name = 'ssd_resnet34'
-#     results, latency, overall_accuracy, throughput, energy_required, power_watts = run_model(image_path, model_name)
-#     # print(f"Detected objects: {results}")
-#     print(f"Latency: {latency:.2f} seconds")
-#     print(f"Accuracy: {overall_accuracy:.2f}")
-#     print(f"throughput: {throughput:.2f}")
-#     print(f"energy_required: {energy_required:.2f}")
-#     print(f"power_watts: {power_watts:.2f}")
+if __name__ == "__main__":
+    image_path = "ppc-0603.jpeg"  # Replace with your image path or URL
+    model_name = 'ssd_resnet34'
+    results, latency, overall_accuracy, throughput, energy_required, power_watts = run_model(image_path, model_name)
+    # print(f"Detected objects: {results}")
+    print(f"Latency: {latency:.2f} seconds")
+    print(f"Accuracy: {overall_accuracy:.2f}")
+    print(f"throughput: {throughput:.2f}")
+    print(f"energy_required: {energy_required:.2f}")
+    print(f"power_watts: {power_watts:.2f}")
