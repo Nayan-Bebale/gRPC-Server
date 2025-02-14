@@ -15,6 +15,11 @@ message DetectionResponse {
     string energy_efficiency = 3;  // Add energy efficiency field
     float cpu_usage = 4;  // Add CPU usage field
     float memory_usage = 5;  // Add memory usage field
+    float throughput = 6;  // Add throughput field
+    float energy_required = 7;  // Add energy required field
+    float power_watts = 8;  // Add power watts field
+    map<string, string> server_data = 9;  // Add server_data as a map
+    float latency = 10;
 }
 
 message DetectedObject {
